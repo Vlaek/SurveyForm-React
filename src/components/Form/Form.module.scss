@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;900&display=swap');
+
+.form {
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 8px;
+	padding: 45px;
+	margin-top: 50px;
+}
+
+.label {
+	font-size: 20px;
+	font-weight: 400;
+	margin-bottom: 12px;
+
+	span {
+		margin-right: 25px;
+	}
+}
+
+.field {
+	width: 100%;
+	height: 35px;
+	border: 1px solid #ced4da;
+	border-radius: 5px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	font-size: 18px;
+	padding: 15px;
+
+	&::placeholder {
+		font-family: 'Montserrat', sans-serif;
+		color: rgba(0, 0, 0, 0.6);
+	}
+}
+
+.button_list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 40px;
+}
+
+.button {
+	width: 47%;
+	padding: 15px;
+	background-color: #66cdaa;
+	color: #fff;
+	border-radius: 5px;
+	font-size: 18px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+
+	&:hover {
+		background-color: #fff;
+		color: #66cdaa;
+	}
+}
+
+.select {
+	margin-top: 12px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.radio_list,
+.checkbox_list {
+	margin-top: 30px;
+}
+
+.radio_item,
+.checkbox_item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px;
+	font-size: 20px;
+}
+
+.checkbox_item:last-child {
+	margin-bottom: 30px;
+}
+
+.radio,
+.checkbox {
+	width: 30px;
+	height: 30px;
+	margin-right: 20px;
+}
+
+.textarea {
+	width: 100%;
+	height: 150px;
+	resize: vertical;
+	border: 1px solid #ced4da;
+	border-radius: 5px;
+	font-size: 18px;
+	padding: 15px;
+
+	&::placeholder {
+		font-family: 'Montserrat', sans-serif;
+		color: rgba(0, 0, 0, 0.6);
+	}
+}
