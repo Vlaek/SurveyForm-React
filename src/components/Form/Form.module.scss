@@ -6,6 +6,17 @@
 	border-radius: 8px;
 	padding: 45px;
 	margin-top: 50px;
+
+	@media (max-width: 620px) {
+		margin-top: 35px;
+		padding: 35px;
+		border-radius: 0;
+	}
+
+	@media (max-width: 450px) {
+		margin-top: 15px;
+		padding: 25px 15px;
+	}
 }
 
 .label {
@@ -15,6 +26,19 @@
 
 	span {
 		margin-right: 25px;
+
+		@media (max-width: 620px) {
+			margin-right: 10px;
+		}
+	}
+
+	@media (max-width: 620px) {
+		font-size: 14px;
+		margin-bottom: 8px;
+	}
+
+	@media (max-width: 450px) {
+		font-size: 12px;
 	}
 }
 
@@ -32,6 +56,18 @@
 		font-family: 'Montserrat', sans-serif;
 		color: rgba(0, 0, 0, 0.6);
 	}
+
+	@media (max-width: 620px) {
+		font-size: 14px;
+		margin-top: 5px;
+		margin-bottom: 20px;
+		padding: 10px;
+	}
+
+	@media (max-width: 450px) {
+		font-size: 12px;
+		margin-bottom: 15px;
+	}
 }
 
 .button_list {
@@ -39,6 +75,10 @@
 	flex-direction: row;
 	justify-content: space-between;
 	margin-top: 40px;
+
+	@media (max-width: 620px) {
+		margin-top: 20px;
+	}
 }
 
 .button {
@@ -55,16 +95,37 @@
 		background-color: #fff;
 		color: #66cdaa;
 	}
+
+	@media (max-width: 620px) {
+		font-size: 14px;
+		margin-bottom: 20px;
+	}
+
+	@media (max-width: 450px) {
+		font-size: 12px;
+	}
 }
 
 .select {
 	margin-top: 12px;
 	font-family: 'Montserrat', sans-serif;
+
+	@media (max-width: 620px) {
+		margin-top: 5px;
+	}
 }
 
 .radio_list,
 .checkbox_list {
 	margin-top: 30px;
+
+	@media (max-width: 620px) {
+		margin-top: 20px;
+	}
+
+	@media (max-width: 450px) {
+		margin-bottom: 15px;
+	}
 }
 
 .radio_item,
@@ -73,10 +134,27 @@
 	align-items: center;
 	margin-bottom: 15px;
 	font-size: 20px;
+
+	@media (max-width: 620px) {
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+
+	@media (max-width: 450px) {
+		font-size: 14px;
+	}
 }
 
 .checkbox_item:last-child {
 	margin-bottom: 30px;
+
+	@media (max-width: 620px) {
+		margin-bottom: 20px;
+	}
+
+	@media (max-width: 450px) {
+		margin-bottom: 15px;
+	}
 }
 
 .radio,
@@ -84,6 +162,12 @@
 	width: 30px;
 	height: 30px;
 	margin-right: 20px;
+
+	@media (max-width: 620px) {
+		width: 20px;
+		height: 20px;
+		margin-right: 10px;
+	}
 }
 
 .textarea {
@@ -98,5 +182,15 @@
 	&::placeholder {
 		font-family: 'Montserrat', sans-serif;
 		color: rgba(0, 0, 0, 0.6);
+	}
+
+	@media (max-width: 620px) {
+		height: 125px;
+		font-size: 14px;
+		padding: 10px;
+	}
+
+	@media (max-width: 450px) {
+		font-size: 12px;
 	}
 }
