@@ -23,6 +23,10 @@ interface IOption {
 	label: string
 }
 
+interface FormProps {
+	setShowModal: React.Dispatch<React.SetStateAction<boolean>>
+}
+
 const options: IOption[] = [
 	{ value: 'student', label: 'Student' },
 	{ value: 'full-time job', label: 'Full-time job' },
@@ -31,7 +35,7 @@ const options: IOption[] = [
 	{ value: 'other', label: 'Other' },
 ]
 
-const Form: FC = () => {
+const Form: FC<FormProps> = ({ setShowModal }) => {
 	const {
 		register,
 		handleSubmit,
@@ -43,6 +47,7 @@ const Form: FC = () => {
 	})
 
 	const onSubmit: SubmitHandler<MyForm> = data => {
+		setShowModal(true)
 		console.log(data)
 	}
 

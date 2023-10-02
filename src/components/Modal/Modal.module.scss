@@ -1,0 +1,55 @@
+.wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 105;
+	overflow: auto;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&_enter {
+		opacity: 0;
+	}
+
+	&_enter_active {
+		opacity: 1;
+		transition: opacity 500ms ease-in-out;
+	}
+
+	&_exit_active {
+		opacity: 1;
+	}
+
+	&_exit {
+		opacity: 0;
+		transition: opacity 500ms ease-in-out;
+	}
+}
+
+.modal {
+	width: 500px;
+	height: 500px;
+	background-color: #66cdaa;
+	border-radius: 8px;
+}
+
+.title {
+	text-align: center;
+	font-size: 32px;
+	margin-top: 25px;
+}
+
+.body {
+	display: flex;
+	justify-content: center;
+	margin-top: 80px;
+}
+
+.smile {
+	font-size: 192px;
+}
